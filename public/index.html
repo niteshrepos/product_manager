@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+
+<h1>Product manager</h1>
+
+<form class="addTask">
+	<input type="text" class="inputText">
+	<input type="submit" class="submit">
+</form>
+	<div class="tasklist">
+
+	</div>
+<script type="text/template" id="taskTemplate">
+	<%= title %> <button class="edit" data-record="<%= _id %>">edit</button><button class="delete" data-record="<%= _id %>">delete</button>
+</script>
+
+<script src="js/underscore.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/backbone.js"></script>
+
+
+<!-- config -->
+<script src="js/config/setup.js"></script>
+
+<!-- model -->
+<script src="js/Models/Product.js"></script>
+
+<!-- collection -->
+<script src="js/Collection/Products.js"></script>
+
+<!-- views -->
+<script src="js/Views/Product.js"></script>
+<script src="js/Views/ProductsCollection.js"></script>
+<script src="js/Views/AddProduct.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
